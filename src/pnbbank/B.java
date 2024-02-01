@@ -514,19 +514,23 @@ public class B {
         frame.getContentPane().setLayout(null);
 
         JLabel lblNewLabel = new JLabel("FirstName");
-        lblNewLabel.setBounds(39, 35, 67, 13);
+        lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 10));
+        lblNewLabel.setBounds(21, 35, 85, 13);
         frame.getContentPane().add(lblNewLabel);
 
         JLabel lblNewLabel_1 = new JLabel("LastName");
-        lblNewLabel_1.setBounds(39, 58, 67, 13);
+        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+        lblNewLabel_1.setBounds(21, 58, 85, 13);
         frame.getContentPane().add(lblNewLabel_1);
 
         JLabel lblNewLabel_2 = new JLabel("City");
-        lblNewLabel_2.setBounds(39, 81, 45, 13);
+        lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 10));
+        lblNewLabel_2.setBounds(21, 81, 63, 13);
         frame.getContentPane().add(lblNewLabel_2);
          
         JLabel lblNewLabel_4 = new JLabel("Branch");
-        lblNewLabel_4.setBounds(39, 141, 45, 13);
+        lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 10));
+        lblNewLabel_4.setBounds(21, 145, 63, 13);
         frame.getContentPane().add(lblNewLabel_4);
 
         txtfname = new JTextField();
@@ -550,7 +554,7 @@ public class B {
 
 
         txtphone = new JTextField();
-        txtphone.setBounds(160, 193, 96, 19);
+        txtphone.setBounds(170, 190, 96, 19);
         frame.getContentPane().add(txtphone);
         txtphone.setColumns(10);
 
@@ -562,6 +566,7 @@ public class B {
         frame.getContentPane().add(JDrs13);
 
         JButton btnNewButton = new JButton("Add");
+        btnNewButton.setForeground(new Color(255, 0, 0));
         btnNewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 addRecord();
@@ -571,6 +576,7 @@ public class B {
         frame.getContentPane().add(btnNewButton);
 
         JButton btnNewButton_1 = new JButton("Cancel");
+        btnNewButton_1.setForeground(new Color(255, 0, 0));
         btnNewButton_1.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		 frame.dispose();
@@ -586,8 +592,8 @@ public class B {
         frame.getContentPane().add(comboBox);
 
         Label label = new Label("State");
-        label.setFont(new Font("Cambria", Font.BOLD, 10));
-        label.setBounds(39, 100, 59, 21);
+        label.setFont(new Font("Tahoma", Font.BOLD, 10));
+        label.setBounds(21, 100, 77, 21);
         frame.getContentPane().add(label);
 
         txtstate = new JTextField();
@@ -595,7 +601,8 @@ public class B {
         frame.getContentPane().add(txtstate);
         
         JLabel lblNewLabel_5 = new JLabel("Phone");
-        lblNewLabel_5.setBounds(39, 196, 45, 13);
+        lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 10));
+        lblNewLabel_5.setBounds(21, 193, 45, 13);
         frame.getContentPane().add(lblNewLabel_5);
     }
 
